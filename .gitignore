@@ -9,3 +9,4 @@ src/**.js
 coverage
 *.log
 yarn.lock
+testing.js
