@@ -43,5 +43,6 @@ export const toJSON = (literals: TemplateStringsArray): { [key: string]: Root } 
     }
   }
 
+
   return result;
 };
