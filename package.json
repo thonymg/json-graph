@@ -1,6 +1,6 @@
 {
   "name": "json-graph",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "json-graph: Language inspired by the syntax and structure of GraphQL, one can efficiently create and structure JSON objects, providing a more intuitive and streamlined approach to handling and manipulating data in the JSON format.",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
