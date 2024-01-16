@@ -2,6 +2,13 @@ import { parseBlockFieldFunction } from "./blocks/parseBlockFieldFunction";
 import { parseBlockFieldsList } from "./blocks/parseBlockFieldsList";
 import { parseBlockFieldsObject } from "./blocks/parseBlockFieldsObject";
 
+/**
+ * Parses a structured template string into a JSON-like object representing various structures.
+ * The template string can describe structures like Root, Alias, Blocks, and Lambda.
+ * Each structure is parsed and organized into a hierarchical JSON object.
+@param {TemplateStringsArray} literals - A template string array containing the structured data.
+@returns {{ [key: string]: Root }} A JSON-like object with each key representing a Root structure and its corresponding parsed data.
+*/
 export const toJSON = (literals: TemplateStringsArray): { [key: string]: Root } => {
   const lines = literals[0].split("\n").map((line) => line.trim());
   const result: { [key: string]: Root } = {};

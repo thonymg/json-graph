@@ -4,6 +4,14 @@ import { extractBetween } from "../utils/extractBetween";
 import { parseFieldDefinition } from "./parseFieldDefinition";
 import { parseProperties } from "./../properties/parseProperties";
 
+/**
+ * Parses a list of lines into a structured object representing fields in a block.
+ * Extracts and organizes field definitions into an object, keyed by field names.
+ *
+ * @param {string[]} lines - Array of strings, each representing a line of the block.
+ * @param {string} blockType - The type of the block being parsed.
+ * @returns {any} An object containing the block's name, type, properties, and structured field data.
+ */
 export const parseBlockFieldsObject = (lines: string[], blockType: string): any => {
   const fieldsObject: { [key: string]: Field } = {};
 

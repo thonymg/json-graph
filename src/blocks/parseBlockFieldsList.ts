@@ -5,6 +5,13 @@ import { generateUniqueKey } from "../utils/generateUniqueKey";
 import { parseFieldDefinition } from "./parseFieldDefinition";
 import { parseProperties } from "./../properties/parseProperties";
 
+/**
+ * Parses a list of lines to extract fields and properties for a block structure.
+ * The function identifies blocks of properties and parses individual fields within them.
+ *
+ * @param {string[]} lines - Array of strings representing lines in a block.
+ * @param {"Root" | "Alias" | "Blocks"} blockType - The type of block to parse.
+ */
 export const parseBlockFieldsList = (lines: string[], blockType: "Root" | "Alias" | "Blocks"): any => {
   const fields: Field[] = [];
 

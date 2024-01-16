@@ -6,6 +6,7 @@ node_modules
 test
 lib
 src/**.js
+oneFileIndex.ts
 coverage
 *.log
 yarn.lock
